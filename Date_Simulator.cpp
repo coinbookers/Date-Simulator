@@ -51,4 +51,22 @@ int main() {
         else if (mood == 1)
             std::cout << "A shy smile appears.\n";
         else
-            std:
+            std::cout << "The moment feels intense.\n";
+
+        showStatus(love, heart);
+
+        if (love <= 0 || heart <= 0) {
+            std::cout << "\nThe connection fades...\n";
+            return 0;
+        }
+    }
+
+    std::cout << "\nFinal Result\n";
+
+    if (love + heart > 18)
+        std::cout << "A perfect bond is formed.\n";
+    else
+        std::cout << "A gentle memory remains.\n";
+
+    return 0;
+}
